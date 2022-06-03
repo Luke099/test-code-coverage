@@ -18,3 +18,5 @@ jobs:
         env:
           CYPRESS_baseUrl: http://localhost:8080/
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: ✅ Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
